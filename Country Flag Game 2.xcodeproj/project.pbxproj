@@ -15,6 +15,9 @@
 		34FBDD5C296DBB3600DC5CD1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBDD5B296DBB3600DC5CD1 /* CustomButton.swift */; };
 		34FBDD5E296DBD2D00DC5CD1 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBDD5D296DBD2D00DC5CD1 /* ProgressBar.swift */; };
 		34FBDD60296DBF2200DC5CD1 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBDD5F296DBF2200DC5CD1 /* AnswerRow.swift */; };
+		34FBDD62296F0DDE00DC5CD1 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBDD61296F0DDE00DC5CD1 /* QuestionView.swift */; };
+		34FBDD6429705E3E00DC5CD1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBDD6329705E3E00DC5CD1 /* Data.swift */; };
+		34FBDD6629705FD300DC5CD1 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBDD6529705FD300DC5CD1 /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		34FBDD5B296DBB3600DC5CD1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		34FBDD5D296DBD2D00DC5CD1 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		34FBDD5F296DBF2200DC5CD1 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
+		34FBDD61296F0DDE00DC5CD1 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		34FBDD6329705E3E00DC5CD1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		34FBDD6529705FD300DC5CD1 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				34FBDD49296C6F6D00DC5CD1 /* ContentView.swift */,
+				34FBDD61296F0DDE00DC5CD1 /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				34FBDD59296C720100DC5CD1 /* Question.swift */,
+				34FBDD6329705E3E00DC5CD1 /* Data.swift */,
+				34FBDD6529705FD300DC5CD1 /* QuizManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,9 +185,12 @@
 				34FBDD5C296DBB3600DC5CD1 /* CustomButton.swift in Sources */,
 				34FBDD5A296C720100DC5CD1 /* Question.swift in Sources */,
 				34FBDD4A296C6F6D00DC5CD1 /* ContentView.swift in Sources */,
+				34FBDD62296F0DDE00DC5CD1 /* QuestionView.swift in Sources */,
+				34FBDD6629705FD300DC5CD1 /* QuizManager.swift in Sources */,
 				34FBDD5E296DBD2D00DC5CD1 /* ProgressBar.swift in Sources */,
 				34FBDD60296DBF2200DC5CD1 /* AnswerRow.swift in Sources */,
 				34FBDD48296C6F6D00DC5CD1 /* Country_Flag_Game_2App.swift in Sources */,
+				34FBDD6429705E3E00DC5CD1 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
