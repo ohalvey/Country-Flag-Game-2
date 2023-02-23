@@ -8,26 +8,26 @@
 import SwiftUI
 
 struct AnswerRow: View {
-    var answer: Answer
+    var Answer: Answer
     @State private var isSelected = false
     var body: some View {
         HStack(spacing: 20) {
             Image(systemName: "circle.fill")
                 .font(.caption)
-            Text(answer.text)
+            Text(Answer.text)
                 .font(.title)
             if isSelected {
                 Spacer()
-                Image(systemName: answer.isCorrect ?
+                Image(systemName: Answer.isCorrect ?
                       "checkmark.circle.fill" : "x.circle.fill")
-                .foregroundColor(answer.isCorrect ? .green : .red)
+                .foregroundColor(Answer.isCorrect ? .green : .red)
             }
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(.white)
         .cornerRadius(10)
-        .shadow(color: isSelected ? (answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
+        .shadow(color: isSelected ? (Answer.isCorrect ? .green : .red) : .gray, radius: 5, x: 0.5, y: 0.5)
         .onTapGesture {
             isSelected = true
         }
@@ -36,6 +36,6 @@ struct AnswerRow: View {
 
 struct AnswerRow_Previews: PreviewProvider {
     static var previews: some View {
-        AnswerRow(answer: Answer(text: "Test", isCorrect: true))
+        AnswerRow(Answer: Answer(text: "Test", isCorrect: true))
     }
 }

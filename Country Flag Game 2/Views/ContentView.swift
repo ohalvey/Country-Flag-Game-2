@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var quizManager = QuizManager()
     var body: some View {
-        VStack {
+        
             NavigationView {
                 VStack(spacing: 40) {
                     VStack(spacing: 20) {
@@ -22,7 +22,7 @@ struct ContentView: View {
                     }
                     NavigationLink {
                         QuestionView()
-                            .environmentObject(QuizManager)
+                            .environmentObject(quizManager)
                     } label: {
                         CustomButton(text: "Start")
                         
@@ -32,12 +32,13 @@ struct ContentView: View {
                 .ignoresSafeArea(.all)
                 .background(.cyan)
             }
-            
+            .padding()
         }
+    }
+        
         struct ContentView_Previews: PreviewProvider {
             static var previews: some View {
                 ContentView()
             }
         }
-    }
-}
+
