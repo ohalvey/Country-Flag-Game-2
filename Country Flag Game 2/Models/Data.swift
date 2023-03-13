@@ -132,6 +132,66 @@ struct Data {
                     
                  ])
         ,
-    ]
+        Question(correctAnswer:
+                    Answer(text: "Peru", isCorrect: true),
+                 incorrectAnswers: [
+                    Answer(text: "China", isCorrect: false),
+                    Answer(text: "Ukraine", isCorrect: false),
+                    Answer(text: "Saudi Arabia", isCorrect: false)
+                    
+    ])
+        ,
+        Question(correctAnswer:
+                    Answer(text: "Norway", isCorrect: true),
+                 incorrectAnswers: [
+                    Answer(text: "Sweden", isCorrect: false),
+                    Answer(text: "Ireland", isCorrect: false),
+                    Answer(text: "Japan", isCorrect: false)
+                    
+                    ])
+        ,
+        Question(correctAnswer:
+                    Answer(text: "United States", isCorrect: true),
+                 incorrectAnswers: [
+                    Answer(text: "Israel", isCorrect: false),
+                    Answer(text: "Spain", isCorrect: false),
+                    Answer(text: "Greenland", isCorrect: false)
+                    
+                    ])
+        ,
+        Question(correctAnswer:
+                    Answer(text: "United States", isCorrect: true),
+                 incorrectAnswers: [
+                    Answer(text: "Angola", isCorrect: false),
+                    Answer(text: "Norway", isCorrect: false),
+                    Answer(text: "South Korea", isCorrect: false)
+                    
+                 ])
+        ,
+        Question(correctAnswer:
+                    Answer(text: "Pakistan", isCorrect: true),
+                 incorrectAnswers: [
+                    Answer(text: "Austria", isCorrect: false),
+                    Answer(text: "England", isCorrect: false),
+                    Answer(text: "Estonia", isCorrect: false)
+        ])
+        ,
+        Question(correctAnswer:
+                    Answer(text: "Spain", isCorrect: true),
+                 incorrectAnswers: [
+                    Answer(text: "India", isCorrect: false),
+                    Answer(text: "France", isCorrect: false),
+                    Answer(text: "Afghanistan", isCorrect: false)
+                    ])
+        ,
+        Question(correctAnswer:
+                    Answer(text: "South Africa", isCorrect: true),
+                 incorrectAnswers: [
+                    Answer(text: "China", isCorrect: false),
+                    Answer(text: "North Korea", isCorrect: false),
+                    Answer(text: "Zimbabwe", isCorrect: false)
+                    ])
+        ,
+        ]
 }
 

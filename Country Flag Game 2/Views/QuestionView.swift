@@ -18,13 +18,13 @@ struct QuestionView: View {
                         .font(.title)
                         .fontWeight(.heavy)
                     Spacer()
-                    Text("1 out of 3")
+                    Text("\(quizManager.index) out of \(quizManager.questions.count)")
                         .foregroundColor(.yellow)
                         .fontWeight(.heavy)
                 }
-                ProgressBar(progress: 50)
+                ProgressBar(progress: quizManager.progress)
                 VStack(spacing: 20) {
-                    Text("Which country's flag is this?")
+                    Text("Which Country's flag is this?")
                         .font(.title)
                     Image(quizManager.country)
                         .resizable()
@@ -34,31 +34,28 @@ struct QuestionView: View {
                             .environmentObject(quizManager)
                     }
                 }
-                Button {
-                    quizManager.goToNextQuestion()
-                } label: {
-                    CustomButton(text: "next", background: quizManager.answerSelected ? .yellow : .gray)
-                }
-                .disabled (!quizManager.answerSelected)
+                    Button {
+                        quizManager.goToNextQuestion()
+                    } label: {
+                        CustomButton(text: "next", background: quizManager.answerSelected ? .yellow : .gray)
+                    }
+                    .disabled(!quizManager.answerSelected)
                 Spacer()
-            }
-            
-            
+                }
             .padding()
             .frame(width: .infinity, height: .infinity)
             .background(.cyan)
         }
         else {
-            VStack(spacing: 20) {
+            VStack(spacing:20) {
                 Text("Country Flag Quiz")
                     .font(.title)
-                Text("Congratulations! You have completed the quiz")
+                Text("Congratulations! You have completed the quiz.")
                 Text("You scored \(quizManager.score) out of \(quizManager.questions.count)")
                 Button {
                     quizManager.reset()
                 } label: {
-                    CustomButton(text: "Try Again")
-                    
+                    CustomButton(text: "Play Again")
                 }
             }
             .foregroundColor(.yellow)
@@ -67,10 +64,10 @@ struct QuestionView: View {
             .background(.cyan)
         }
     }
-    
-    struct QuestionView_Previews: PreviewProvider {
-        static var previews: some View {
-            QuestionView()
-        }
+}
+
+struct QuestionView_Previews: PreviewProvider {
+    static var previews: some View {
+        QuestionView()
     }
 }
